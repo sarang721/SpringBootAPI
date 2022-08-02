@@ -3,6 +3,7 @@ package com.hotels.sarang.springboothotels.Services;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,9 @@ public class HotelServiceTest {
     public void getHotels()
     {
 
+       List<Hotel> hotels=service.getHotels();
+
+       assertEquals(3, hotels.size());
        
         
     }
@@ -102,9 +106,5 @@ public class HotelServiceTest {
         repo.deleteById(20);
         assertEquals(null, repo.getHotelById(20));
     }
-
-
-
-
 
 }

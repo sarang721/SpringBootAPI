@@ -19,12 +19,6 @@ public class Search {
     public void setTodate(String todate) {
         this.todate = todate;
     }
-
-
-
-    
-
-
     
     
 }

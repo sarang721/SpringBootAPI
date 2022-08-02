@@ -16,7 +16,6 @@ import com.hotels.sarang.springboothotels.models.Search;
 @Service
 public class HotelService {
 
-
     @Autowired
     public Repo repo;
 
